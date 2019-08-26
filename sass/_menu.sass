@@ -1,0 +1,62 @@
+nav
+	
+	display: flex
+	background-color: $darck
+	position: fixed
+	top: 0
+	right: 0
+	left: 0
+	z-index: 3
+.nav-menu	
+	position: relative
+	display: flex
+	width: 100%	
+	z-index: 3	
+	&__list
+		position: relative
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 100%
+		margin: 0
+		list-style: none			
+		li
+			position: relative
+			display: block
+			padding-bottom: 10px
+			&:hover
+				ul
+					display: block
+					margin: 0
+			ul
+				position: absolute
+				top: 36px
+				left: 0px
+				display: none
+				width: 200px
+				background: $darck
+				margin: 0				
+				li					
+					a
+						display: block
+						text-transform: none
+						width: 100%
+			& > a :hover,:hover >
+			a
+				background: $darck	
+				color: $light					
+		a
+			display: block
+			padding: 12px 25px 0px 0px
+			font-size: 14px
+			color: #fff			
+			text-decoration: none
+			font-weight: bold
+			text-transform: uppercase
+			height: 36px
+			box-sizing: border-box
+			&:hover
+				color: darken($light, 50)
+				
+
+

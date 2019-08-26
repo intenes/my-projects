@@ -1,0 +1,63 @@
+.blog
+	padding-top: 58px
+	padding-bottom: 78px
+	&-category
+		&_list
+			list-style: none
+			li
+				a
+					text-decoration: none
+					background-color: $base-color
+					display: block
+					color: $light
+					font-size: 20px
+					font-weight: 500	
+					margin-bottom: 20px
+					&:hover
+						color: lighten($darck, 30)
+
+	&-post
+		&-header
+			text-align: center
+			a
+				text-decoration: none
+				color: $darck
+				font-size: 27px
+				font-weight: 700	
+				margin-bottom: 39px
+		&-descr
+			font-size: 14px
+			font-weight: 300
+			
+		&-thumbnail
+			margin-top: 20px
+			width: 100%
+
+.pagination
+	margin: 36px auto
+	text-align: center
+
+	ul li
+		display: inline-block
+
+		margin: 0
+		padding: 0
+	.page-numbers
+		display: inline-block
+		text-decoration: none
+		padding: 6px 10px
+		margin-right: 3px
+		margin-bottom: 6px
+		color: $darck
+		background-color: $bg-darck
+		transition: all 200ms ease-in-out
+		border-radius: 3px
+		&:hover
+			background: darken($bg-darck, 50)
+			color: $light
+	.current, .current:hover
+		background-color: $base-color
+		color: $light
+	.inactive, .inactive:hover
+		background-color: darken($bg-darck, 30)
+		color: $darck
